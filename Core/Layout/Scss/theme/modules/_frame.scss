@@ -42,8 +42,13 @@
 	text-align: center;
 }
 
+
+.homebtn {
+	cursor: pointer;
+}
+
 .mainPicture {
-	z-index: -999;
+	z-index: 99;
 	display: none;
 	@include mq($bp3){
 		margin-left: auto;
@@ -242,19 +247,26 @@
 //
 
 
+
 .error404 {
 	height: 100%;
 	text-align: center;
 	width: 100%;
-	padding-top: 20%;
-	font-family: $beta-font-family;
+	padding-top: 10%;
+	font-family: $alpha-font-family;
+
+	@include mq($bp3){
+		width: 80%;
+		padding-top: 15%;
+		margin-left: 20%;
+	}
 
 	.error404Content {
 	
 	}
 
 	h1 {
-		color: $beta-ui-color;
+		color: $alpha-ui-color;
 		font-weight: $gamma-font-weight;
 		font-size: 8em;
 		@include padding-tb(0,0);
@@ -267,6 +279,7 @@
 		@include margin-tb(0,0);
 	}
 }
+
 
 
 
@@ -415,32 +428,5 @@
 // Error
 //
 
-
-
-.error404 {
-	height: 100%;
-	text-align: center;
-	width: 100%;
-	padding-top: 20%;
-	font-family: $beta-font-family;
-
-	.error404Content {
-	
-	}
-
-	h1 {
-		color: $beta-ui-color;
-		font-weight: $gamma-font-weight;
-		font-size: 8em;
-		@include padding-tb(0,0);
-		@include margin-tb(0,0);
-	}
-
-	p {
-		font-weight: $gamma-font-weight;
-		font-size: 2em;
-		@include margin-tb(0,0);
-	}
-}
 
 

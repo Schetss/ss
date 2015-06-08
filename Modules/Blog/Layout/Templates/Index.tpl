@@ -3,8 +3,6 @@
 	- {$items}: contains an array with all posts, each element contains data about the post
 *}
 
-
-
 <div class="grid">
 	{iteration:items}
 		  <div class="grid-sizer"></div>

@@ -88,10 +88,17 @@ $grid.masonry();
 // Blog
 //
 
-$('.grid-item').click(function(){
-	window.location = $('.itemContent h3 a',this).attr("href");
-});
+	$('.grid-item').click(function(){
+		window.location = $('.itemContent h3 a',this).attr("href");
+	});
 
+//
+// Img home
+//
+
+	$('.homebtn').click(function(){
+		window.location = $(this).attr("href");
+	});
 
 });
 

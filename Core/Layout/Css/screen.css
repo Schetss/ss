@@ -1504,8 +1504,11 @@ input[type="submit"]:hover, button:hover {
 .main-header {
   text-align: center; }
 
+.homebtn {
+  cursor: pointer; }
+
 .mainPicture {
-  z-index: -999;
+  z-index: 99;
   display: none; }
   @media (min-width: 42.5em) {
     .mainPicture {
@@ -1648,10 +1651,15 @@ input[type="submit"]:hover, button:hover {
   height: 100%;
   text-align: center;
   width: 100%;
-  padding-top: 20%;
+  padding-top: 10%;
   font-family: "Open Sans", sans-serif; }
+  @media (min-width: 42.5em) {
+    .error404 {
+      width: 80%;
+      padding-top: 15%;
+      margin-left: 20%; } }
   .error404 h1 {
-    color: #008db2;
+    color: #1c62d1;
     font-weight: 300;
     font-size: 8em;
     padding-top: 0em;
@@ -1748,26 +1756,6 @@ input[type="submit"]:hover, button:hover {
   clear: both;
   text-align: center;
   font-size: 0.8em; }
-
-.error404 {
-  height: 100%;
-  text-align: center;
-  width: 100%;
-  padding-top: 20%;
-  font-family: "Open Sans", sans-serif; }
-  .error404 h1 {
-    color: #008db2;
-    font-weight: 300;
-    font-size: 8em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    margin-top: 0em;
-    margin-bottom: 0em; }
-  .error404 p {
-    font-weight: 300;
-    font-size: 2em;
-    margin-top: 0em;
-    margin-bottom: 0em; }
 
 .main-content {
   width: 109.0909090909%;

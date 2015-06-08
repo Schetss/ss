@@ -1,0 +1,135 @@
+//
+// Forms
+// ---
+// Default markup for the form elements, based on the settings file.
+//
+
+form {
+	padding: 0 0 em(14);
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	font-weight: $gamma-font-weight;
+	font-size: 0.9em;
+
+	p:last-child {
+		position: relative;
+		width: 100%;
+	}
+}
+
+legend,
+label {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	@include baseline-dimensions(0,1,1);
+}
+
+// Input elements
+
+input[type="input"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[name="field_country_code"],
+input[name="field_city_code"],
+input[name="field_phone_int"],
+select[multiple],
+textarea {
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+	border-radius: $radius;
+	border: 0;
+	color: lighten($alpha-text-color, 30);
+	font-family: $alpha-font-family;
+	margin: 0;
+	width: 100%;
+	display: block;
+	border: 1px solid $alpha-ui-color;
+	@include border-box;
+	@include input-s;
+	@include margin-tb(0,0.5);
+
+	&:focus {
+		color: $beta-text-color;
+		outline-color: $alpha-ui-color;
+	}
+
+	@include mq($bp3) {
+		@include input-m;
+	}
+
+	@include mq($bp5) {
+		@include input-l;
+	}
+}
+
+input[type="text"], input[type="email"] {
+	height: 50px;
+	padding-left: 10px;
+	font-size: 1em !important;
+}
+
+textarea {
+	height: 150px;
+	padding-left: 10px;
+	font-size: 1em !important;
+}
+
+// Placeholders
+
+::-webkit-input-placeholder {
+	font-family: $beta-font-family;
+	font-style: italic;
+}
+
+::-moz-placeholder {
+	font-family: $beta-font-family;
+	font-style: italic;
+}
+
+:-ms-input-placeholder {
+	font-family: $beta-font-family;
+	font-style: italic;
+}
+
+// Buttons
+
+input[type="submit"],
+button {
+	cursor: pointer;
+	background-color: $delta-ui-color;
+	color: $alpha-ui-color;
+	border: 2px solid $alpha-ui-color;
+	border-radius: $radius;
+	width: 50%;
+	height:40px;
+	line-height: 20px;
+	margin-top: 20px;
+	font-size: 1.1em;
+	font-weight: 600;
+	-webkit-appearance: none;
+	tranistion: 0.5s;
+	float: left;
+}
+
+input[type="submit"]:hover, button:hover {
+	background-color: $alpha-ui-color;
+	color: $delta-ui-color;
+	border: transparent;
+	tranistion: 0.5s;
+
+}

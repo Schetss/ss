@@ -1,0 +1,362 @@
+// 
+// Home
+//
+
+// 
+// homeSelection
+//
+
+.homeSelection {
+	@extend %clearfix;
+	border-left: 2px solid $delta-ui-color;
+	border-right: 2px solid $delta-ui-color;
+}
+
+.selectionBlock {
+	cursor: pointer;
+	height: 150px;
+	overflow:hidden;
+	position: relative;
+	float: left;
+	width: 33.33%;
+	border: 2px solid $delta-ui-color;
+	transition: 0.5s;
+
+	@include mq($bp3){
+		height: 200px;
+	}
+
+	@include mq($bp4) {
+		height: 250px;	
+	}
+
+	.selectionImg {
+		position: absolute;
+		z-index:-99;
+		width: 100%;
+
+		img {
+			width: 140%;
+			margin-left: -20%;
+			max-width: none;
+
+			@include mq($bp3){
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
+
+	.selectionText {
+		z-index: 99;
+		text-align: center;
+		height: 100%; 
+
+
+		h2 {
+			font-size: 1.2em;
+			font-weight: $alpha-font-weight;
+
+
+			@include mq($bp2){
+				font-size: 1.4em;
+			}
+
+
+			@include mq($bp3){
+				font-size: 2em;
+				$font-weight: $gamma-font-weight;
+			}
+			
+			a, a:hover, a:active, a:visited {
+				text-decoration: none;
+				color: $delta-ui-color;
+			}
+		}
+		
+		p {	
+
+			@include px-margin-lr(1,1);
+			border-top: 1px solid $delta-ui-color;
+			color: $delta-ui-color;
+			@include mq($bp4) {
+				@include px-margin-lr(2,2);
+			}
+		}	
+	}
+
+}
+
+.selectionBlock:first-child, .selectionBlock:nth-child(2) {
+	width: 50%;
+	height: 150px;
+	border-top: 4px solid $delta-ui-color;
+
+	@include mq($bp3){
+		height: 200px;
+	}
+	
+	@include mq($bp4) {
+		height: 300px;
+	}
+
+	.selectionText {
+
+		p {
+			padding-top: 2em;
+			line-height: 2em;
+			@include px-padding-lr(1,1);
+
+		}
+	}
+}
+
+
+.selectionBlock:nth-child(4), .selectionBlock:nth-child(5) {
+	width: 50%;
+	@include mq($bp4) {
+		width: 33.33%;
+	}
+}
+
+.selectionBlock:nth-child(3), .selectionBlock:nth-child(4),  .selectionBlock:nth-child(5) {
+ 	
+ 	.selectionText {
+ 		h2 {
+
+ 			@include mq($bp3) {
+
+ 			}
+
+ 			@include mq($bp4) {
+ 				font-size: 1.6em;
+ 			}
+ 		}
+
+ 		p {
+ 			font-size: 0.95em;
+ 			padding-top: 1.5em;
+ 			line-height: 1.9em;
+ 			@include px-padding-lr(0,0);
+ 		}
+	}
+ }
+
+
+
+.selectionBlock:nth-child(3) {
+	width: 100%;
+
+	img {
+		margin-top: -100px;
+		width: 100%;
+		margin-left: 0;
+		@include mq($bp3){
+			margin-top: -300px;
+		}
+
+		@include mq($bp4) {
+			margin-top: 0;
+		}
+	}
+
+	@include mq($bp4) {
+		width: 33.33%;
+	}
+}
+//
+// selectionBlockNormal
+//
+
+.selectionBlockNormal {
+
+	.selectionText {
+		h2 {
+			line-height: 600%;
+
+			@include mq($bp2){
+				line-height: 500%;
+
+			}
+			
+			@include mq($bp4) {
+				line-height: 800%;
+				transition: 1s;
+			}
+		}
+		p {
+			@extend %displayNone;
+		}
+	}
+}
+
+
+//
+// selectionbBockHover
+//
+
+.selectionBlockHover {
+	.selectionText {
+
+		h2 {
+			line-height: 600%;
+
+			@include mq($bp2){
+				line-height: 500%;
+
+			}
+
+			@include mq($bp4){
+				line-height: 130%;	
+				transition: 1s;
+			}
+			
+		}
+
+		p {
+			@extend %displayNone;
+			@include mq($bp4){
+				display: block;
+			}
+		}
+	}
+}
+
+
+.selectionBlockHover2 {
+	.selectionText {
+
+		h2 {
+			line-height: 600%;
+
+			@include mq($bp2){
+				line-height: 500%;
+
+			}
+
+			@include mq($bp3) {
+				line-height: 800%;
+				font-weight: $gamma-font-weight;
+			}
+
+			
+		}
+
+		p {
+			@extend %displayNone;
+		}
+	}
+}
+
+
+
+
+//
+// Colors
+//
+
+.selectionBlockNormal:nth-child(1) {
+	.selectionText {
+		@include background-opacity($blue1,0.6);
+		transition: 1s;
+	}
+}
+
+.selectionBlockNormal:nth-child(2) {
+	.selectionText {
+		@include background-opacity($blue2,0.6);
+		transition: 1s;
+
+	}
+}
+
+
+.selectionBlockNormal:nth-child(3) {
+	.selectionText {
+		@include background-opacity($blue3,0.6);
+		transition: 1s;
+
+	}
+}
+
+
+.selectionBlockNormal:nth-child(4) {
+	.selectionText {
+		@include background-opacity($blue4,0.6);
+		transition: 1s;
+	}
+}
+
+
+.selectionBlockNormal:nth-child(5) {
+	.selectionText {
+		@include background-opacity($blue5,0.6);
+		transition: 1s;
+	}
+}
+
+
+//
+// ColorsHover
+//
+
+
+.selectionBlockHover:nth-child(1),.selectionBlockHover2:nth-child(1) {
+	.selectionText {
+		@include background-opacity($blue1,0.9);
+		transition: 1s;
+	}
+}
+
+.selectionBlockHover:nth-child(2),.selectionBlockHover2:nth-child(2) {
+	.selectionText {
+		@include background-opacity($blue2,0.9);
+		transition: 1s;
+	}
+}
+
+
+.selectionBlockHover:nth-child(3),.selectionBlockHover2:nth-child(3) {
+	.selectionText {
+		@include background-opacity($blue3,0.9);
+		transition: 1s;
+	}
+}
+
+
+.selectionBlockHover:nth-child(4),.selectionBlockHover2:nth-child(4) {
+	.selectionText {
+		@include background-opacity($blue4,0.9);
+		transition: 1s;
+	}
+}
+
+
+.selectionBlockHover:nth-child(5),.selectionBlockHover2:nth-child(5) {
+	.selectionText {
+		@include background-opacity($blue5,0.9);
+		transition: 1s;
+	}
+}
+ 
+
+//
+// About 
+//
+
+
+#homeAbout {
+	display: none;
+
+	@include mq($bp4) {
+		display: block;
+	}
+}
+
+#homeAboutText {
+	width: 100%;
+
+	@include mq($bp4) {
+		width: 66.66%;
+	}
+}

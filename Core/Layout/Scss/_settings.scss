@@ -1,0 +1,112 @@
+//
+// Chopstick settings
+//
+
+// Debug
+
+$debug-mode: false;
+
+// Typography
+
+$show-baseline-grid: false; // toggle the visibility of the baseline (true/false)
+$baseline-holder: holder; // set the classname of the element which will show the baseline
+$grid-color: rgba(#000,0.1); // set the baseline grid color and opacity
+
+$alpha-font-family	: "Open Sans", sans-serif;
+$beta-font-family	: "Open Sans", sans-serif;
+
+$alpha-line-height	: 1.5; // em-value
+$alpha-baseline-grid: 7; // pixel-value
+$alpha-leading		: 1; // multiplier
+
+$alpha-font-size	: 16; // pixel-value
+
+$alpha-font-weight	: 400;
+$beta-font-weight	: 700;
+$gamma-font-weight	: 300;
+
+// Grid
+
+$grid-gutter	: 20;
+$grid-column	: 70;
+$grid-columns	: 11;
+
+
+// Breakpoints calculated in em's, always based on 16px base-value
+
+$bp1: 320/16*1em;
+$bp2: 480/16*1em;
+$bp3: 680/16*1em;
+$bp4: 960/16*1em;
+$bp5: 1140/16*1em;
+$bp6: 1400/16*1em;
+
+
+// Modular scale settings
+
+$ratio				: 1.414;
+$importantnumber	: 44;
+$leading			: 1;
+$base-size			: $alpha-font-size/16*1em;
+
+
+// manual modular scale font sizes
+// based on http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
+
+$ms-2 				: 12;
+$ms-1 				: 14;
+$ms1 			 	: 18;
+$ms2 			 	: 21;
+$ms3 			 	: 23;
+$ms4 			 	: 28;
+$ms5 			 	: 31;
+$ms6 			 	: 37;
+$ms7 			 	: 42;
+$ms8 			 	: 50;
+$ms10 			 	: 56;
+$ms11			 	: 67;
+$ms12			 	: 75;
+$ms13			 	: 89;
+$ms14			 	: 100;
+
+
+// UI
+
+$radius			: 5px;
+$border-width	: 1px;
+$border-style	: solid;
+$depth			: 0%; // Range: 0-100%
+$contrast		: 91%; // Range: 0-100%
+$shadow			: 21%; // Range: 0-100%
+$highlight		: 0%; // Range: 0-100%
+
+
+// Colors
+
+$alpha-ui-color		: #1c62d1; // Blue 1
+$beta-ui-color		: #008db2; // Blue 2
+$gamma-ui-color		: #31b1c6; // Blue 3 - Highlight
+$delta-ui-color		: #FFFFFF; // white
+$epsilon-ui-color	: #F0F0F0; // light grey
+
+$error-color 		: red;
+$success-color 		: green;
+$notice-color 		: yellow;
+
+$error-color 		: #d00c00;
+$success-color 		: #72aa2e;
+$notice-color 		: #ffe38a;
+
+// Tekst
+
+$alpha-text-color	: #404040; // Dark grey
+$beta-text-color	: $alpha-ui-color; // Blue 1
+
+
+// Links
+
+$alpha-link-color			: $delta-ui-color;
+$alpha-link-colorhover		: darken($delta-ui-color, 10);
+$alpha-link-colorfocus		: darken($alpha-link-color, 10);
+$alpha-link-coloractive		: lighten($alpha-link-color, 10);
+$alpha-link-colorvisited	: darken($alpha-link-color, 5);

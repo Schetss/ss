@@ -3,13 +3,7 @@
 	- {$widgetBlogRecentArticlesFull}: contains an array with all posts, each element contains data about the post
 *}
 
-
-
-
-
-
 {option:widgetBlogRecentArticlesFull}
-
 <div class="grid">
 	{iteration:widgetBlogRecentArticlesFull}
 		  <div class="grid-sizer"></div>
@@ -34,5 +28,6 @@
 		</div>
 	{/iteration:widgetBlogRecentArticlesFull}	
 </div>
+{/option:widgetBlogRecentArticlesFull}
 {include:Core/Layout/Templates/Pagination.tpl}
 

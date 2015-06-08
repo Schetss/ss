@@ -412,22 +412,35 @@
 
 
 //
-// VRD
+// Error
 //
 
-.logoVrd {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	opacity: 0.2;
-	width: 250px;
 
-	@include mq($bp3){
-		width: 300px;
-	}
+
+.error404 {
+	height: 100%;
+	text-align: center;
+	width: 100%;
+	padding-top: 20%;
+	font-family: $beta-font-family;
+
+	.error404Content {
 	
-	@include mq($bp4){
-		width: 350px;
+	}
+
+	h1 {
+		color: $beta-ui-color;
+		font-weight: $gamma-font-weight;
+		font-size: 8em;
+		@include padding-tb(0,0);
+		@include margin-tb(0,0);
+	}
+
+	p {
+		font-weight: $gamma-font-weight;
+		font-size: 2em;
+		@include margin-tb(0,0);
 	}
 }
+
 

@@ -1,7 +1,9 @@
 <header class="header-holder">
 	<div class="main-header">
 		<div class="mainPicture">
-			<a href="/"><img onload="imgLoaded(this)" src="/src/Frontend/Core/Layout/images/logo.png" class="retina logo" alt="logo" /></a>
+			<div class="imgWrapper">
+				<a href="/"><img onload="imgLoaded(this)" src="/src/Frontend/Core/Layout/images/logo.png" class="retina logo" alt="logo" /></a>
+			</div>
 		</div>
 		<h1 class="name"><a href="/">Stijn Schets</a></h1>
 		<ul class="socialMedia">

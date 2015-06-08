@@ -40,6 +40,26 @@ $(jsTheme.init);
 // JQuery
 //
 
+
+// Set pixelRatio to 1 if the browser doesn't offer it up.
+var pixelRatio = !!window.devicePixelRatio ? window.devicePixelRatio : 1;
+ 
+// Rather than waiting for document ready, where the images
+// have already loaded, we'll jump in as soon as possible.
+$(window).on("load", function() {
+    if (pixelRatio > 1) {
+        $('.retina').each(function() {
+ 
+            // Very naive replacement that assumes no dots in file names.
+            $(this).attr('src', $(this).attr('src').replace(".","@2x."));
+        });
+    }
+
+});
+
+
+
+
 //
 // Masonry
 //
@@ -63,40 +83,34 @@ $grid.masonry();
 		});
    	}
 
+
+//
+// Blog
+//
+
+$('.grid-item').click(function(){
+	window.location = $('.itemContent h3 a',this).attr("href");
 });
 
 
+});
+
+ 
+
+//
+// Social Media Blog
+//
 
 
-	
-
-
-
-	//
-	// Blog
-	//
-
-	$('.grid-item').click(function(){
-		window.location = $('.itemContent h3 a',this).attr("href");
-	});
-
-
-	 
-
-	//
-	// Social Media Blog
-	//
-
-
-	$(document).on("scroll", function(){
-		if ($(document).scrollTop() > 510){
-			$('.socialmedia').addClass('socialmediaFixed');
-		}
-		else
-		{
-			$('.socialmedia').removeClass('socialmediaFixed');
-		}
-	});
+$(document).on("scroll", function(){
+	if ($(document).scrollTop() > 510){
+		$('.socialmedia').addClass('socialmediaFixed');
+	}
+	else
+	{
+		$('.socialmedia').removeClass('socialmediaFixed');
+	}
+});
 
 
 

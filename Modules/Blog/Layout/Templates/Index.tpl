@@ -10,9 +10,9 @@
 		  <div class="grid-sizer"></div>
 		  <div class="grid-item">
 		  	{option:items.image}
-		  	<div class="itemTop">
+		  	<div class="itemTop imgWrapper">
 				<p>
-					<img alt="article_image" <img src="{$FRONTEND_FILES_URL}/blog/images/source/{$items.image}" onload="imgLoaded(this)"/>
+					<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$items.image}" onload="imgLoaded(this)"/>
 				</p>
 			</div>
 			{/option:items.image}	

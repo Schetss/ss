@@ -1505,6 +1505,7 @@ input[type="submit"]:hover, button:hover {
   text-align: center; }
 
 .mainPicture {
+  z-index: -999;
   display: none; }
   @media (min-width: 42.5em) {
     .mainPicture {

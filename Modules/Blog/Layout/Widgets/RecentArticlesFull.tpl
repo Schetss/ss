@@ -11,7 +11,7 @@
 		  	{option:widgetBlogRecentArticlesFull.image}
 		  	<div class="itemTop imgWrapper">
 				<p>
-					<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$widgetBlogRecentArticlesFull.image}" onload="imgLoaded(this)"/>
+					<img src="{$FRONTEND_FILES_URL}/blog/images/400x500/{$widgetBlogRecentArticlesFull.image}" onload="imgLoaded(this)"/>
 				</p>
 			</div>
 			{/option:widgetBlogRecentArticlesFull.image}

@@ -48,7 +48,6 @@ $(jsTheme.init);
 
 $(document).ready( function() {
  var $grid = $('.grid').masonry({
-
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     percentPosition: true

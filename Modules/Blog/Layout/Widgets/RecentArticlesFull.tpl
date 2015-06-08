@@ -16,7 +16,7 @@
 			</div>
 			{/option:widgetBlogRecentArticlesFull.image}
 			<div class="itemContent">
-				<h3><a href="{$items.full_url}">{$items.title}</a></h3>
+				<h3><a href="{$widgetBlogRecentArticlesFull.full_url}">{$widgetBlogRecentArticlesFull.title}</a></h3>
 				<p class="itemDate">
 					{* Written on *}
 						{$widgetBlogRecentArticlesFull.publish_on|date:{$dateFormatLong}:{$LANGUAGE}}
@@ -29,5 +29,3 @@
 	{/iteration:widgetBlogRecentArticlesFull}	
 </div>
 {/option:widgetBlogRecentArticlesFull}
-{include:Core/Layout/Templates/Pagination.tpl}
-

@@ -9,7 +9,7 @@
 		<ul class="socialMedia">
 			<li><a href="https://twitter.com/schetsstijn" target="_blank"><img src="/src/Frontend/Core/Layout/images/twitter.svg" alt="twitter" /></a></li>
 			<li><a href="https://www.linkedin.com/in/schetsstijn" target="_blank"><img src="/src/Frontend/Core/Layout/images/linkedin.svg" alt="linkedin" /></a></li>
-			<li><a href="https://www.facebook.com/Schets" target="_blank"><img src="/src/Frontend/Core/Layout/images/facebook.svg" alt="facebook" /></a></li>
+			<li><a href="https://www.behance.net/schets" target="_blank"><img src="/src/Frontend/Core/Layout/images/behance.svg" alt="behance" /></a></li>
 		</ul>
 		{* Navigation *}
 		<div class="navigationHolder">
